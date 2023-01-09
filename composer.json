@@ -1,5 +1,5 @@
 {
-    "name": "google/gtfs-realtime-bindings",
+    "name": "mburger/gtfs-realtime-bindings",
     "type": "library",
     "description": "PHP classes generated from the GTFS-realtime protocol buffer specification.",
     "keywords": ["gtfs-realtime"],
