@@ -1,6 +1,6 @@
-# PHP GTFS-realtime Language Bindings
+# PHP GTFS-realtime Language Bindings (PHP 7&8)
 
-[![PHP version](https://badge.fury.io/ph/google%2Fgtfs-realtime-bindings.svg)](http://badge.fury.io/ph/google%2Fgtfs-realtime-bindings)
+*NOTE: This is a fork of the original package with updated depenedencies for the use with newer PHP versions.*
 
 Provides PHP classes generated from the
 [GTFS-realtime](https://developers.google.com/transit/gtfs-realtime/) Protocol
@@ -11,7 +11,7 @@ For bindings in other languages, see the
 [gtfs-realtime-bindings](https://github.com/google/gtfs-realtime-bindings)
 project.
 
-**Deprecated:** *As of February 2019, the official `google-protobuf` Google protoc tool [doesn't support proto2 files](https://github.com/protocolbuffers/protobuf/issues/3623).  As a result we are deprecating the PHP bindings until official support for proto2 files is implemented in the Google protocol buffer tools.*
+
 
 ## Add the Dependency
 
@@ -22,13 +22,11 @@ so, add a dependency in your `composer.json` file:
 
 ```
 "require": {
-  "google/gtfs-realtime-bindings": "x.y.z"
+  "mburger/gtfs-realtime-bindings": "x.y.z"
 }
 ```
 
 Where `x.y.z` is the latest release version:
-
-[![PHP version](https://badge.fury.io/ph/google%2Fgtfs-realtime-bindings.svg)](http://badge.fury.io/ph/google%2Fgtfs-realtime-bindings)
 
 Then update your Composer dependencies:
 
@@ -59,4 +57,3 @@ foreach ($feed->getEntityList() as $entity) {
 
 For more details on the naming conventions for the PHP classes generated from
 the [gtfs-realtime.proto](https://developers.google.com/transit/gtfs-realtime/gtfs-realtime-proto),
-check out the [the gtfs-realtime.php source file](https://github.com/google/gtfs-realtime-bindings-php/blob/master/src/gtfs-realtime.php).
